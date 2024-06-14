@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-bottom: 10px;
+        }
+
+        .b {
+            background-color: aqua;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .red {
+            /* 非不得以別用 */
+            background-color: red!important;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        CSS權重
+        所謂權重就是優先順序，
+        權重越大，優先度越高。
+        inline style> ID> class> element
+        if權重same,則後蓋前。
+        權重一樣，後面(style裡面的css)優先
+    </pre>
+    <div id="a" class="b"></div>
+    <div id="a" class="big small red"></div>
+    <!-- inline style 直接寫在標籤裡面的css指令=> -->
+    <div id="a" class="big small red" style="width: 200px;height: 200px;background-color: green;"></div>
+    <!-- !important =>權重最大 -->
+</body>
+</html>

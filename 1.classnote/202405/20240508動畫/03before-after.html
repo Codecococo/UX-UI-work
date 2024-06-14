@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box-1 {
+             background-color: rgb(255, 218, 71);
+             position: relative;
+        }
+
+        .box-2 {
+             background-color: rgb(255, 218, 71);
+             position: relative;
+        }
+
+        /* ::before ::after 裡面一定要加 content:; */
+        .box-1::after {
+            /* 加content:; */
+            content: "Orang";
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+        }
+
+        .box-1::before {
+            /* 加content:; */
+            content: "Orang";
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:20%;
+            left:20%;
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+        }
+
+        .box-2::before {
+            /* 加content:; */
+            content: "Orang";
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+        }
+
+        .box-2:hover::after {
+            content: ">";
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+</body>
+</html>

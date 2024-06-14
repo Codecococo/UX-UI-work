@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.left-half {
+    height: 100vh;
+    overflow: hidden; 
+    padding: 0; 
+}
+@media (max-width:992px) {
+    .left-half {
+    width: 0;
+    height: 0;
+    overflow: hidden; 
+    padding: 0; 
+}
+}
+.left-half video {
+    width: 100%;
+    object-fit: cover;
+}
+.right-half {
+    height: 100vh;
+    overflow: hidden; 
+    padding: 0; 
+}
+.img-70 {
+    width: 70%;
+    object-fit: cover;
+}

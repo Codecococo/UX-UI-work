@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-2-padding-1-note</title>
+    <style>
+        #all{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            /* padding會影響體積 */
+            /* 打padding: XXpx 在周圍預留XXpx的空白 */
+            /* padding: 50px; */
+            /* padding 4個 順序為: 上>右>下>左 */
+            padding: 10px 50px 10px 50px;
+            /* padding 3個 順序為: 上>左右>下 */
+            /* padding: 10px 50px 10px; */
+            /* padding 2個 順序為: 上下>左右 */
+            /* padding: 10px 50px; */
+            /* CSS後面程式碼越後寫會蓋掉前寫的 */
+        }
+        #box-c1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box-c1"> </div>
+    </div>
+</body>
+</html>

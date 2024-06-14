@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            /* 自動換行 */
+            flex-wrap: wrap;
+            /* 自動換行且使換行之後元素反向排列 */
+            /* flex-wrap: wrap-reverse; */
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            /* align-items: center; */
+            /* 從左對齊 */
+            /* justify-content: start; */
+            /* 左右底不留空格平均分散 */
+            /* justify-content: space-between;  */
+            /* 小框周圍空間均等 */
+            /* justify-content: space-around; */
+            /* 所有空間均等 */
+            /* justify-content: space-evenly; */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 0 10px 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+</body>
+</html>

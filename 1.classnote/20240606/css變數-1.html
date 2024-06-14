@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS變數必須設在根元素 =>:root，就是 HTML */
+        /* :root */
+        html {
+            --try-bg-color: rgba( 30, 50, 80, 0.6);
+            --try-font-color: rgba( 170, 100, 120, 0.6);
+        }
+        .box {
+            /* var()變數 */
+            background-color: var(--try-bi-color);
+            color: var(--try-font-color);
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            /* x , y , 顏色 */
+            box-shadow: 10px 10px red;
+            /* 模糊半徑 */
+            box-shadow: 10px 10px 10px red;
+            /* 陰影擴散 */
+            box-shadow: 10px 10px 10px 20px orange;
+
+            /* 取消陰影 */
+            /* box-shadow: none; */
+
+            margin-bottom: 100px;
+        }
+
+        .box-1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(211, 211, 211);
+            border: 1px solid black;
+            border-radius: 50%;
+            /* background-color: black; */
+            /* x , y , 顏色 */
+            /* box-shadow: 10px 10px red; */
+            /* 模糊半徑 */
+            /* box-shadow: 10px 10px 10px red; */
+            /* 陰影擴散 */
+            box-shadow: 10px 10px 10px rgb(210, 210, 210), 10px 10px 10px 10px black;
+
+            /* 取消陰影 */
+            /* box-shadow: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box-1"></div>
+</body>
+</html>

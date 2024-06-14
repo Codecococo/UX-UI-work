@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 3000px;
+        }
+        #nav{
+            width: 100%;
+            height: 100px;
+            background-color: papayawhip;
+            /* 固定不動 */
+            position: fixed;
+            /* 調整圖層Z軸 */
+            z-index: 9;
+        }
+        #all{
+            background-color: palegoldenrod;
+            width: 80%;
+            height: 3000px;
+            margin: auto;
+            padding-top: 100px;
+        }
+        #banner{
+            background-color: black;
+            width: 100%;
+            height: 500px;
+            /* 背景圖片 */
+            background-image: url(../../5.doforfun/youtubelearning/img/挖庫挖庫.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            z-index: 3;
+        }
+        #avatar {
+            background-color: goldenrod;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: -50px;
+            left: 100px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="nav"></div>
+    <div id="all">Ania wants pinuts
+        <div id="banner">
+            <div id="avatar"></div>
+        </div>
+    </div>
+    <!-- 除非使用position，一般無法在圖片上寫字。 -->
+    <img src="" alt="">
+</body>
+</html>

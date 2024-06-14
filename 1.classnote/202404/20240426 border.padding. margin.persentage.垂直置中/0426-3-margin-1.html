@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-3-margin-1-note</title>
+    <style>
+        #box-c1{
+                width: 100px ;
+                height: 100px;
+                background-color:aqua ;
+                /* margin 圖形外間隔 */
+                /* margin 不影響體積 */
+                /* margin 物體互推之處只取最大值 
+                ex:a下推5px b上推20px 則共只距離20px */
+                /* 最好只進行下推&左右只推一邊 */
+                margin-bottom: 5px;
+
+        }
+        #box-c2{
+                width: 100px ;
+                height: 100px ;
+                background-color:red ;
+                margin-top: 20px;
+                
+        }
+        #box-c3{
+                width: 100px ;
+                height: 100px ;
+                background-color:green ;
+                margin-top: 20px;
+                
+        }
+    </style>
+</head>
+<body>
+    <div id="box-c1"></div>
+    <div id="box-c2"></div>
+    <div id="box-c3"></div>
+</body>
+</html>

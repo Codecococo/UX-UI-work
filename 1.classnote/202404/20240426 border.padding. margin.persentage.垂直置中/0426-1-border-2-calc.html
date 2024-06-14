@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-1-border-2-calc</title>
+    <style>
+        #box-c1{
+        /* 計算打calc 長寬共100px- 10px(邊框)*2*/
+        /* 因可用空間增加邊框之後會增加面積，故需減除邊框面積 */
+            width: calc(100px - 10px*2 );
+            height: calc(100px - 10px*2 );
+            background-color: black;
+            border-top: 10px solid rgb(221, 221, 221);
+            border-right: 10px solid rgb(184, 184, 184);
+            border-left: 10px solid gray;
+            border-bottom: 10px solid rgb(75, 75, 75);
+        }
+        #box-c2{
+        /* 計算打calc 長寬共100px- 10px(邊框)*2*/
+        /* 因可用空間增加邊框之後會增加面積，故需減除邊框面積 */
+            width: calc(100px - 25px );
+            height: calc(100px - 25px );
+            background-color: black;
+            border-top: 5px solid rgb(221, 221, 221);
+            border-right: 10px solid rgb(184, 184, 184);
+            border-left: 15px solid gray;
+            border-bottom: 20px solid rgb(75, 75, 75);
+            margin-top: 10px ;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-c1"></div>
+    <div id="box-c2"></div>
+</body>
+</html>

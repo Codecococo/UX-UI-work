@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 250px;
+            background-color: rgb(118, 152, 255);
+            margin: auto;
+            margin-top: 200px;
+            position: relative;
+        }
+
+        .box-2 {
+            width: 250px;
+            height: 500px;
+            background-color: rgb(118, 152, 255);
+            margin: auto;
+            margin-top: 200px;
+            position: relative;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(21, 255, 0);
+            border-radius: 50%;
+            /* left: -100px;
+            top: -100px; */
+            position: absolute;
+            animation-name: roll-ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        /* @keyframes roll-ball {
+            0% {
+                left: 0;
+                top: 0;
+                transform: translate(-100%, -100%);
+            }
+
+            25% {
+                left: 0;
+                top: 0;
+                transform: translate(500%, -100%);
+            }
+
+            50% {
+                left: 0;
+                top: 0;
+                transform: translate(500%, 500%);
+            }
+
+            75% {
+                left: 0;
+                top: 0;
+                transform: translate(-100%, 500%);
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                transform: translate(-100%, -100%);
+            }
+        } */
+
+        /* 裡面的left和top是計算原本box的長寬去做計算 */
+
+        @keyframes roll-ball {
+            0% {
+                left: 0;
+                top: 0;
+                transform: translate(-100%, -100%);
+            }
+
+            25% {
+                left: 100%;
+                top: 0;
+                transform: translate(0%, -100%);
+            }
+
+            50% {
+                left: 100%;
+                top: 100%;
+                transform: translate(0%, 0%);
+            }
+
+            75% {
+                left: 0;
+                top: 100%;
+                transform: translate(-100%, 0%);
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                transform: translate(-100%, -100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

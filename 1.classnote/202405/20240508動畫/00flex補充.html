@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            /* 自動換行 */
+            flex-wrap: wrap;
+            /* 自動換行且使換行之後元素反向排列 */
+            /* flex-wrap: wrap-reverse; */
+            /* 水平置中 */
+            /* justify-content: center; */
+            /* 水平轉垂直 */
+            /* flex-direction: column; */
+            /* flex-flow 屬性接受兩個值，第一個值表示主軸方向（flex-direction），第二個值表示是否允許換行（flex-wrap）。 */
+            /* flex-flow: wrap; */
+            /*  子元素在 Flex 容器中垂直排列，並且不允許換行。*/
+            flex-flow: column;
+            /* 垂直置中 */
+            /* align-items: center; */
+            /* 從左對齊 */
+            /* justify-content: start; */
+            /* 左右底不留空格平均分散 */
+            /* justify-content: space-between;  */
+            /* 小框周圍空間均等 */
+            /* justify-content: space-around; */
+            /* 所有空間均等 */
+            /* justify-content: space-evenly; */
+            /* 順序完全顛倒 */
+            /* flex-direction: row-reverse; */
+            /* 順序顛倒且垂直 */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column會被flex-direction: XXXXXXX吃掉 
+            所以要放 flex-direction: column 才能垂直 */
+
+            /*  */
+            /* align-items: center; */
+            /*  */
+            /* align-content: space-between; */
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 0 10px 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .box-1 {
+            /* box-1排在垂直方向最上方 */
+            align-self: flex-start;
+        }
+
+            /* 調換每個框的順序 */
+        /* .box-1 {
+            order: 5
+        }
+
+        .box-2 {
+            order: 4
+        }
+
+        .box-3 {
+            order: 3
+        }
+
+        .box-4 {
+            order: 2
+        }
+
+        .box-5 {
+            order: 1
+        }
+
+        .box-6 {
+            order: -1
+        }
+
+        .box-7 {
+            order: -2
+        }
+
+        .box-8 {
+            order: -3
+        }
+
+        .box-9 {
+            order: -4
+        }
+
+        .box-10 {
+            order: -5
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="box box-1 ">1</div>
+    <div class="box box-2 ">2</div>
+    <div class="box box-3 ">3</div>
+    <div class="box box-4 ">4</div>
+    <div class="box box-5 ">5</div>
+    <div class="box box-6 ">6</div>
+    <div class="box box-7 ">7</div>
+    <div class="box box-8 ">8</div>
+    <div class="box box-9 ">9</div>
+    <div class="box box-10 ">10</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            /* 動畫名稱 */
+            animation-name: color-ball;
+            /* 動畫期間 */
+            animation-duration: 10s;
+            /* 重複次數 */
+            animation-iteration-count: infinite;
+        }
+
+            /*      動畫名稱 */
+        @keyframes color-ball {
+            0% {
+                background-color: white;
+            }
+            10% {
+                background-color: red;
+            }
+            20% {
+                background-color: orange;
+            }
+            30% {
+                background-color: yellow;
+            }
+            40% {
+                background-color: greenyellow;
+            }
+            50% {
+                background-color: green;
+            }
+            60% {
+                background-color: blue;
+            }
+            70% {
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

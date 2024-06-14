@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+        }
+        a{
+            /* 去除底線 */
+            text-decoration: none;
+        }
+        .nav{
+            width: calc(80% - 10px*2);
+            height: calc(80px - 10px*2);
+            padding: 10px;
+            background-color: none;
+            /* position一定要配上下左右 */
+            position: fixed;
+            left:10%;
+        }
+        .logo{
+            width: 60px;
+            height: 60px;
+            background-image: url(./img/654321.png);
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+        }
+        /* 滑鼠移到目標上方 */
+        .logo:hover{
+            /* 大小 */
+            /* transform: scale(1.2); */
+            /* 旋轉 */
+            /* transform: rotate(180deg);
+            /* x軸翻轉 */
+            transform: scaleX(-1); 
+            /* 使圖片照(x,y,z)軸上型變 */
+            transform: scale3d(1.1, 1.1., 1.1.) scaley(-1) rotate(180deg);
+        }
+        .nav-btn-all{
+            /* background-color: black; */
+            width: 300px;
+            height: 60px;
+            float: right;
+        }
+        .nav-btn{
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 30%;
+        }
+        .container{
+            width: 80%;
+            height: 1200px;
+            margin: auto;
+        }
+        .banner{
+            width: 100%;
+            /* height: calc(100vh);  */
+            /* 因padding加了 */
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 50vh;
+        }
+        #banner-1{
+            background-image: url(./img/梵谷龍貓01.jpg)
+        }
+        #banner-2{
+            background-image: url(./img/魔法少女與梵谷02.jpg);
+        }
+        #banner-3{
+            background-image: url(./img/梵谷無臉男03.jpg);
+        }
+        .mask{
+            background-color: black;
+            width: 100%;
+            height: 50vh;
+            opacity: 0.5;
+            position: relative;
+        }
+        .btn{
+            background-color: white;
+            width: 100px;
+            height: 50px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 中間要逗號!!! 不然只會有左右方向的平移 */
+            transform: translate(-50% ,-50%);
+            border-radius: 10px;
+        }
+        .nav-btn:hover{
+            background-color: blue;
+            color: white;
+        }
+        .nav-btn:active{
+            background-color: red;
+            color: purple;
+            font-size: 35px;
+        }
+        .go-top {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(0, 185, 0);
+            color: white;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            line-height: 80px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="nav-btn-all">
+            <!-- a錨點 >anchor -->
+            <!-- href >hyper link refrence 放置你要的連結位置-->
+            <!-- 加起來統稱為超連結 可為url 或是目錄 或是網頁 -->
+            <!-- <a href="#(目標id)"></a> -->
+            <!-- 打.nav-btn-nav-btn-*3+enter -->
+            <a href="#banner-1" class="nav-btn nav-btn-1">一區</a>
+            <a href="#banner-2" class="nav-btn nav-btn-2">二區</a>
+            <a href="#banner-3" class="nav-btn nav-btn-3">三區</a>
+        </div>
+    </div>
+    <!-- container 容器 -->
+    <div class="container">
+        <!-- 設id是為了讓按鈕識別 上面打井字號-->
+        <div id="banner-1" class="banner">
+            <div class="mask">
+                <div class="btn btn-1">一區</div>
+            </div> 
+        </div>
+        <div id="banner-2" class="banner">
+            <div class="mask">
+                <div class="btn btn-2">二區</div>
+            </div>
+        </div>
+        <div id="banner-3" class="banner">
+            <div class="mask">
+                <div class="btn btn-3">三區</div>
+            </div>
+        </div>
+    </div>
+    <a href="" class="go-top">Top</a>
+    <!-- 1.導覽列(先不透明,後透明)
+    a.左方logo
+    b.右方三顆方塊(按鈕區)
+    c.按按鈕即到達相應位置
+    2.內容分三區
+    a.圖片,滿排
+    b.mask下半部
+    c.圖片中間為一方塊,即標示區 -->
+</body>
+</html>

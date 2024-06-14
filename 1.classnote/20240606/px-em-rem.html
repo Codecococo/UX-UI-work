@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 1.2rem;
+        }
+        body {
+            font-size: 24px;
+        }
+        .px16 {
+            font-size: 16px;
+        }
+        .px20 {
+            font-size: 20px;
+        }
+        .px24 {
+            font-size: 24px;
+        }
+        .px32 {
+            font-size: 32px;
+        }
+        .em1dot2 {
+            font-size: 1.2em;
+        }
+        .percent1dot2 {
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.px => 絕對單位 -->
+    <div class="px16">16px
+        <div class="px20">20px
+            <div class="px24">24px
+                <div class="px32">32px</div>
+            </div>
+        </div>
+    </div>
+    <!-- 2.em => 相對單位 每個子元素倍數乘以上層元素 -->
+    <div class="em1dot2">1.2em (16px*1.2)
+        <div class="em1dot2">1.2em (16px*1.2*1.2)
+            <div class="em1dot2">1.2em (16px*1.2*1.2*1.2)
+                <div class="em1dot2">1.2em (16px*1.2*1.2*1.2*1.2)</div>
+            </div>
+        </div>
+    </div>
+    <!-- 3.rem => 相對單位 每個子元素乘以根元素(root)-->
+    <div class="rem1dot2">1.2rem (16px*1.2)
+        <div class="rem1dot2">1.2rem (16px*1.2)
+            <div class="rem1dot2">1.2rem (16px*1.2)
+                <div class="rem1dot2">1.2rem (16px*1.2)</div>
+            </div>
+        </div>
+    </div>
+    <!-- 4 %  -->
+    <div class="percent1dot2">1.2% (16px*1.2)
+        <div class="percent1dot2">1.2% (16px*1.2*1.2)
+            <div class="percent1dot2">1.2% (16px*1.2*1.2*1.2)
+                <div class="percent1dot2">1.2% (16px*1.2*1.2*1.2*1.2)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

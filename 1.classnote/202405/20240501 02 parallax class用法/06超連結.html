@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: aqua;
+            border-radius: 10px;
+            text-align: center;
+            padding: 5px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* 從未拜訪過 使用a:link */
+        a:link {
+            color: red;
+        }
+        a:hover {
+            color: white;
+            background-color: black;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            float: left;
+            margin-top: 20px;
+            margin-left: 30px;
+            padding: 20px;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        /* 按下去時 */
+        a:active{
+            color: red;
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#" class="btn" id="btn-1">連結到自己</a>
+    <a href="./img/waitamin.jpg" class="btn">看圖片</a>
+    <!-- 打a target+enter 另開一新頁-->
+    <a href="./img/thinkaboutit.jpg" target="_blank" class="btn">另開圖片</a>
+    <a href="https://www.google.com.tw/maps/preview" target="_blank" class="btn">Google Map</a>
+    <a href="https://news.google.com/home?hl=zh-TW&gl=TW&ceid=TW:zh-Hant" target="_blank" class="btn">Google News</a>
+    <!-- 加上download -->
+    <a download href="./img/魔法少女與梵谷02.jpg" target="_blank" class="btn">下載梵谷風魔法少女</a>
+    <a href="./img/allthedirt.jpg" target="_blank" class="btn">汙泥染全身</a>
+</body>
+</html>

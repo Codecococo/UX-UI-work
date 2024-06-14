@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 3000px;
+        }
+        #my-bg-1{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(119, 85, 0);
+            background-image: url(./img/20210311-3abb7-600-600.jpg);
+            background-repeat: no-repeat;
+            /* 寬或高任一邊>=原底圖尺寸 */
+            background-size: cover;
+            /* 寬或高有一邊=原底圖尺寸則不再放大 */
+            /* background-size: contain; */
+            background-position: center;
+            background-size: 90% 90%;
+            /* 固定 (未完成學習) 如原圖尺寸較大則fixed則會固定原圖尺寸*/
+            /* background-attachment:fixed ; */
+        }
+        #my-bg-2{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(234, 168, 0);
+            background-image: url(./img/unnamed.jpg);
+            background-repeat: no-repeat;
+            /* 寬或高任一邊>=原底圖尺寸 */
+            /* background-size: cover; */
+            /* 寬或高有一邊=原底圖尺寸則不再放大 */
+            background-size: contain;
+            background-position: center;
+            background-size: 90% 90%;
+            /* background-attachment:fixed ; */
+        }
+    </style>
+</head>
+<body>
+    <div id="my-bg-1"></div>
+    <div id="my-bg-2"></div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptatem natus in consectetur mollitia corrupti non, ab aliquam. Accusantium unde cumque facilis rem sint maiores voluptatem at magnam impedit nostrum!
+    </div>
+</body>
+</html>

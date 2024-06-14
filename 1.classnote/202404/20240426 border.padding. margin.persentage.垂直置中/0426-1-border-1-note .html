@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-1-border-1-note </title>
+    <style>
+        #box-c1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            /* 邊框打border (中間不須逗號) +固體線條打solid (中間不須逗號)+顏色*/
+            border: 1px solid black;
+        }
+        #box-100{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            /* 邊框打border (中間不須逗號) +固體線條打solid (中間不須逗號)+顏色*/
+            border: 10px solid red;
+        }
+        #box-2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 208);
+            /* 邊框打border (中間不須逗號) +固體線條打solid (中間不須逗號)+顏色*/
+            /* 打b-w則出現border-width */
+            border-width: 10px;
+            border-style: dashed;
+            border-color: green;
+            /* 打border:none；為隱藏邊框 */
+            /* border:none; */
+        }
+        #box-M{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 5px solid tomato;
+            border: 10px dashed red ;
+            /* #fXXXX 為16進色票標示 */
+        }
+        /* 立體效果+各邊顏色設置 */
+        #box-c2{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-top: 20px solid rgb(214, 214, 214);
+            border-right:20px solid rgb(184, 184, 184);
+            border-left: 20px solid gray;
+            border-bottom: 20px solid rgb(75, 75, 75);
+        }
+        #box-c3{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /* 變園 50% 或園角 50%內 border-radius: */
+            border-radius: 50%;
+            border-top: 20px solid rgb(214, 214, 214);
+            border-right:20px solid rgb(184, 184, 184);
+            border-left: 20px solid gray;
+            border-bottom: 20px solid rgb(75, 75, 75);
+        }
+        #box-c4{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /* 變園或園角 border-radius: */
+            border-radius: 10px;
+            border-top: 20px solid rgb(214, 214, 214);
+            border-right:20px solid rgb(184, 184, 184);
+            border-left: 20px solid gray;
+            border-bottom: 20px solid rgb(75, 75, 75);
+        }
+    </style>
+</head>
+<body>
+    <div id="box-c1"></div>
+    <div id="box-100"></div>
+    <div id="box-2"></div>
+    <div id="box-M"></div>
+    <div id="box-c2"></div>
+    <div id="box-c3"></div>
+    <div id="box-c4"></div>
+</body>
+</html>

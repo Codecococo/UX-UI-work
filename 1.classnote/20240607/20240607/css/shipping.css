@@ -1,0 +1,39 @@
+.nav-link:hover {
+    background-color: rgb(196, 196, 196);
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .number-bg {
+    background-color: rgb(196, 196, 196);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: black;
+    font-size: 3rem;
+    z-index: 6;
+  }
+  .number-bg-color-w {
+    background-color: rgb(27, 27, 27);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 3rem;
+    z-index: 6;
+  }
+  .progress {
+      position: absolute;
+      width: 80%;
+      top: 70px;
+      left: 60%;
+      z-index: 5;
+  }
+  @media (max-width:992px) {
+    .progress{
+        display: none;
+    }
+  }
+  .collapse .dropdown-menu {
+    left:-350%;
+  }

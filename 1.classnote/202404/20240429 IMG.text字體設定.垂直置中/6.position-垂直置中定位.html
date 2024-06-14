@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-1{
+            width: 600px;
+            height: 600px;
+            background-color: black;
+            position: relative;
+            bottom: 50px;
+            right: 50px;
+        }
+        #box-2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            /* 垂直置中方塊方法 */
+            /* 各取一半常跟寬，再減去自己方塊長寬的一半 */
+            top: calc(50% - 100px/2);
+            left: calc(50% - 100px/2);
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <div id="box-2"></div>
+    </div>
+</body>
+</html>

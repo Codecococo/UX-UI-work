@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+        <!-- Column breaks 分欄符 -->
+        <div class="row">
+          <div class="col-6 col-sm-3 bg-dark">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3 bg-primary">.col-6 .col-sm-3</div>
+      
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+      
+          <div class="col-6 col-sm-3 bg-secondary">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3 bg-success">.col-6 .col-sm-3</div>
+        </div>
+        <!--  -->
+        <div class="row row-cols-4">
+          <div class="col-11 bg-secondary">Column-6</div>
+          <div class="col bg-dark">Column</div>
+          <div class="col bg-primary">Column</div>
+          <div class="col bg-success">Column</div>
+
+        </div>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+    <!--  -->
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </div>
+          <!-- 預設每列只有12格 佔2/12 -->
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    <!-- 多行格式系統 -->
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col">
+            2 of 3
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    <!-- grid 格線系統 -->
+    <!-- text-stard / center / end -->
+    <div class="container text-stard">
+        <div class="row">
+          <div class="col bg-primary">
+            Column
+          </div>
+          <div class="col bg-success">
+            Column
+          </div>
+          <div class="col bg-warning">
+            Column
+          </div>
+        </div>
+      </div>
+    <!-- 響應式 -->
+    <div class="container bg-primary">預設 => default</div>
+    <div class="container-sm bg-secondary"> sm =>100% wide until small breakpoint</div>
+    <div class="container-md bg-success"> md =>100% wide until medium breakpoint</div>
+    <div class="container-lg bg-danger"> lg =>100% wide until large breakpoint</div>
+    <div class="container-xl bg-warning"> xl =>100% wide until extra large breakpoint</div>
+    <div class="container-xxl bg-info"> xxl =>100% wide until extra extra large breakpoint</div>
+    <div class="container-fluid bg-dark"> fluid =>100% wide breakpoint</div>
+    <h1>Hello, world!</h1>
+    <!-- .min> 有壓縮過 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

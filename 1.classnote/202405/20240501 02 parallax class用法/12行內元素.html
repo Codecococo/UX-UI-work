@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line{
+            background-color: aqua;
+        }
+        /* 行內元素 不會占一整列*/
+        /* 設定寬高是無效的 */
+        /* 除非去跟改它的顯示模式 */
+        .special {
+            background-color: red;
+            width: 300px;
+            height: 100px;
+            /* 先設寬高所以文字可置中 */
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+        lorem<span class="special">lorem</span>
+    </div>
+</body>
+</html>

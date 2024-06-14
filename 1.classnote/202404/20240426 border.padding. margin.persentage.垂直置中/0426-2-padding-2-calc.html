@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-2-padding-2-calc</title>
+    <style>
+        #all{
+            /* padding修正大小，因增加padding會多增上下左右面積 */
+            /* 故也須修正成400px*400px */
+            width: calc(400px - 50px*2);
+            height: calc(400px - 50px*2);
+            background-color: aqua;
+            padding: 50px 50px;
+        }
+        #box-c1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box-c1"> </div>
+    </div>
+</body>
+</html>

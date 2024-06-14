@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-5-垂直置中</title>
+    <style>
+        #all{
+            /* 將小版面置終於大版面方法 */
+            /* 垂直置中先於大版面padding-top or -bottom */
+            /* padding-top:(總height-須置中物體height)/2=須扣總長 */
+            /* 水平置中為小版面加上 margin: auto; */
+            width: calc(300px);
+            height: calc(300px - (300px - 100px)/2);
+            background-color: aqua;
+            padding-top: calc((300px - 100px)/2);
+        }
+        #box-c1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box-c1"> </div>
+    </div>
+</body>
+</html>

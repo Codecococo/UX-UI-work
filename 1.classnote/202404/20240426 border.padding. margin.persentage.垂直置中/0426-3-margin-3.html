@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-3-margin-note</title>
+    <style>
+        #box-c1{
+                width: 100px ;
+                height: 100px;
+                background-color:aqua ;
+                /* margin 圖形外間隔 */
+                /* margin 物體互推之處只取最大值 
+                ex:a下推5px b上推20px 則共只距離20px */
+                /* 最好只進行下推&左右只推一邊 */
+                float: left;
+                margin-right: 20px;
+        }
+        #box-c2{
+                width: 100px ;
+                height: 100px ;
+                background-color:red ;
+                float: left;
+                margin-right: 20px;
+        }
+        #box-c3{
+                width: 100px ;
+                height: 100px ;
+                background-color:green ;
+                float: left;
+                
+        }
+        #box-c4{
+                width: 100px ;
+                height: 100px;
+                background-color:red ;
+                float: left;
+                clear:left;
+                margin-top: 20px;
+                margin-right: 20px;
+        }
+        #box-c5{
+                width: 100px ;
+                height: 100px ;
+                background-color:green ;
+                float: left;
+                margin-top: 20px;
+                margin-right: 20px;
+        }
+        #box-c6{
+                width: 100px ;
+                height: 100px ;
+                background-color:aqua ;
+                margin-top: 20px;
+                float: left;
+                
+        }
+        #box-c7{
+                width: 100px ;
+                height: 100px;
+                background-color:green ;
+                float: left;
+                clear:left;
+                margin-top: 20px;
+                margin-right: 20px;
+        }
+        #box-c8{
+                width: 100px ;
+                height: 100px ;
+                background-color:aqua ;
+                float: left;
+                margin-top: 20px;
+                margin-right: 20px;
+        }
+        #box-c9{
+                width: 100px ;
+                height: 100px ;
+                background-color:red ;
+                margin-top: 20px;
+                float: left;
+                
+        }
+    </style>
+</head>
+<body>
+    <div id="box-c1"></div>
+    <div id="box-c2"></div>
+    <div id="box-c3"></div>
+    <div id="box-c4"></div>
+    <div id="box-c5"></div>
+    <div id="box-c6"></div>
+    <div id="box-c7"></div>
+    <div id="box-c8"></div>
+    <div id="box-c9"></div>
+</body>
+</html>

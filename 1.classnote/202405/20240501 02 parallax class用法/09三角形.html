@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .box {
+            width: calc(200px - 100px *2);
+            height: calc(200px - 100px *2);
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .box-1 {
+            background-color: black;
+            /* 三角形 */
+            border-top: 100px solid yellow;
+            border-left: 100px solid red;
+            border-bottom: 100px solid blue;
+            border-right: 100px solid green;
+        }
+        .box-2 {
+            /* 三角形 */
+            border-top: 100px solid white;
+            border-left: 100px solid white;
+            border-bottom: 100px solid blue;
+            border-right: 100px solid white;
+        }
+        .box-3 {
+            /* transparent 透明 */
+            border-top: 100px solid transparent;
+            border-left: 100px solid transparent;
+            border-bottom: 100px solid blue;
+            border-right: 100px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+</body>
+</html>

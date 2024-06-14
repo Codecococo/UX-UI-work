@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-3-margin-4-note</title>
+    <style>
+        #box-c1{
+                width: 100px ;
+                height: 100px;
+                background-color:aqua ;
+                /* margin-auto :方向 推到那方向的極限*/
+                margin-left: auto;
+        
+        }
+        #box-c2{
+                width: 100px ;
+                height: 100px ;
+                background-color:red ;
+                margin-right: auto;
+              
+        }
+        #box-c3{
+                width: 100px ;
+                height: 100px ;
+                background-color:green ;
+                /* 不加方向>水平置中 */
+                margin:auto;
+
+        }
+        #box-c4{
+                width: 100px ;
+                height: 100px ;
+                background-color:yellow;
+                /* 上下推100px 左右不加方向>水平置中 */
+                /* 上下無法置中(因只佔自己面積的上下範圍) */
+                margin: 100px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box-c1"></div>
+    <div id="box-c2"></div>
+    <div id="box-c3"></div>
+    <div id="box-c4"></div>
+
+</body>
+</html>

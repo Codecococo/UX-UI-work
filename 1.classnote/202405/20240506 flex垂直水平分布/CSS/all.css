@@ -1,0 +1,434 @@
+* {
+    /* 自動將padding,border多餘的寬跟高自動扣除 */
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+body{
+    margin: 0;
+    background-color: rgb(255, 174, 0);
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    background-color: rgb(255, 200, 0);
+    background-image: url(../img/OOR橫幅.jpg);
+    background-size: contain;
+    width: calc(366px - 10px*2);
+    height: calc(100vh - 10px*2);
+    margin: 10px;
+    /* background-repeat: no-repeat; */
+    float: left;
+    /* 隱藏溢出的部分 */
+    /* overflow: hidden;  */
+}
+@media (max-width:1330px) {
+    .nav{
+            background-color: rgb(255, 200, 0);
+            background-image: url(../img/OOR橫幅.jpg);
+            width: calc(100% - 5px*2);
+            height: calc(100px - 5px*2);
+            margin: 5px;
+            background-size: contain;
+            /* background-repeat: no-repeat; */
+            float: left;
+            /* 隱藏溢出的部分 */
+            /* overflow: hidden;  */
+        }
+}
+@media (max-width:768px) {
+    .nav{
+        background-color: rgb(255, 200, 0);
+        background-image: url(../img/black.png);
+        width: calc(100% - 2px*2);
+        height: calc(80px - 2px*2);
+        float: left;
+        margin: 2px;
+        position: relative;
+        /* background-repeat: no-repeat; */
+        /* 隱藏溢出的部分 */
+        /* overflow: hidden;  */
+        .ham-btn {
+        background-color: rgb(255, 200, 0);
+        width: 55px;
+        height: 55px;
+        /* 用display: block 固定成區塊層級 */
+        /* 非行內元素不能調整大小  */
+        display: block;
+        position: relative;
+        margin: 10px 0 0 10px;
+    }
+    /* 空格代表後代 */
+    .ham-btn .line {
+        background-color: black;
+        width: 80%;
+        height: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .ham-btn .line-1 {
+        top:25%;
+    }
+    .ham-btn .line-2 {
+        top:50%;
+    }
+    .ham-btn .line-3 {
+        top:75%;
+    }
+    /* 當如果switch被按下去(打勾)時(checked),"+"代表第一個兄弟 */
+    /*  */
+    #ham-switch:checked+.ham-btn .line-1{
+        background-color: black;
+        top:50%;
+        transform: translate(-50%,-50%) rotate(45deg) ;
+        /* 因為旋轉會跑掉 所以加translate */
+    }
+    #ham-switch:checked+.ham-btn .line-2{
+        /* 消失 */
+        display: none;
+    }
+    #ham-switch:checked+.ham-btn .line-3{
+        background-color: black;
+        top:50%;
+        transform: translate(-50%,-50%) rotate(-45deg) ;
+        /* 因為旋轉會跑掉 所以加translate */
+    }
+    /* ~代表後面的兄弟 */
+    #ham-switch:checked~.nav-btn-all{
+        display: block;
+    }
+    }
+}
+.logo{
+    background-color: white;
+    background-image: url(../img/one\ ok\ rock.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin: 100px auto 50px;
+    border-radius: 20%;
+    border: 5px solid rgb(255, 213, 0);
+}
+@media (max-width:1330px) {
+    .logo{
+        background-color: white;
+        background-image: url(../img/one\ ok\ rock.jpg);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        margin: 16px 25px;
+        float: left;
+        border: 2px solid rgb(255, 213, 0);
+    }
+}
+@media (max-width:768px) {
+    .logo{
+        background-color: white;
+        background-image: url(../img/one\ ok\ rock.jpg);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        margin: 0px 10px;
+        /* float: left; */
+        border: 2px solid rgb(255, 213, 0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+}
+.logo:hover {
+    transform:scale(1.2);
+}
+@media (max-width:768px) {
+    .logo:hover {
+        transform:scale(1);
+        transform: translate(-50%,-50%);
+    }
+}
+a {
+    text-decoration: none;
+}
+.nav-btn-all{
+    width: 130px;
+    background-color: rgb(255, 200, 0);
+    margin: auto;
+    background-color: transparent;
+}
+@media (max-width:1330px) {
+    .nav-btn-all{
+            width: 550px;
+            background-color: transparent;
+            float: right;
+            margin-top: 26px;
+            margin-right: 10px;
+        }
+}
+@media (max-width:768px) {
+    .nav-btn-all{
+            width: 150px;
+            background-color: transparent;
+            float: left;
+            /* 顯示模式:隱藏 */
+            display: none;
+            position: absolute;
+            top: 70px;
+            margin-top: 10px;
+        }
+}
+.nav-btn{
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 60px;
+    border: 5px solid rgb(255, 213, 0);
+}
+@media (max-width:1330px) {
+    .nav-btn{
+         background-color: black;
+         color: white;
+         width: 120px;
+         height: 40px;
+         border-radius: 10px;
+         font-size: 32px;
+         line-height: 40px;
+         text-align: center;
+         float: right;
+         margin-right: 20px;
+         border: 2px solid rgb(255, 213, 0);
+    }
+}
+@media (max-width:768px) {
+    .nav-btn{
+        background-color: black;
+        color: white;
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        float: left;
+        margin-left: 20px;
+        border: 2px solid rgb(255, 213, 0);
+    }
+}
+.nav-btn:active{
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+}
+.nav-btn:hover{
+    background-color: greenyellow;
+    color: black;
+    transform: scale(1.1);
+}
+.img-1{
+    background-image: url(../img/OOR黑白漩渦唱片2017.jpg);
+}
+.img-2{
+    background-image: url(../img/OOR\ 水藍色唱片.png)
+}
+.img-3{
+    background-image: url(../img/OOR\ 彩繪唱片2019.png)
+}
+.container{
+    width: calc((100% - 366px) - 10px) ;
+    height: calc(100vh - 10px*2);
+    float: left;
+    background-color: transparent;
+    background-image: url(../img/OOR無中間框大背景.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: calc((100vh - 570px)/2);
+    margin:10px 10px 10px 0;
+}
+@media (max-width:1330px) {
+    .container{
+        width: calc(100% - 5px*2) ;
+        height: calc(100vh - 100px - 5px);
+        float: left;
+        background-color: transparent;
+        background-image: url(../img/OOR無中間框大背景.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: calc(((100vh - 100px) - 80vh)/2);
+        margin:0px 5px 5px 5px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        width: 100% ;
+        height: calc(100vh - 80px);
+        float: left;
+        background-color: transparent;
+        background-image: url(../img/OOR無中間框大背景.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* padding和margin需要複寫掉 */
+        padding-top: 0;
+        margin: 0;
+    }
+}
+.content{
+    width: 956px;
+    height: 570px;
+    background-color: transparent;
+    margin: auto;
+}
+@media (max-width:1600px) {
+    .content {
+        width: 800px;
+        height: 570px;
+        background-color: transparent;
+    }
+}
+@media (max-width:1330px) {
+    .content {
+        width: 90%;
+        height: 80vh;
+        /* margin: 10% 0; */
+        background-color: transparent;
+        margin: auto;
+    }
+}
+@media (max-width:768px) {
+    .content{
+            width: 100%;
+            height: 100vh;
+            background-color: transparent;
+            margin: auto;
+    }
+}
+.content-img {
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 1330px) {
+    .content-img {
+        width: calc(100% - 20px);
+        height: 100%;
+        float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.content-img:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+@media (max-width:768px) {
+    .content-img:hover {
+        transform: scale(0.9);
+        border-radius: 20px;
+    }
+}
+.img-1{
+    width: 33%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: transparent;
+    float: left;
+}
+.img-2{
+    width: calc(34% - 10px*2);
+    height: 100%;
+    margin-right: 10px;
+    background-color: transparent;
+    float: left;
+}
+.img-3{
+    width: 33%;
+    height: 100%;
+    background-color: transparent;
+    float: left;
+}
+@media (max-width:1600px) {
+    .img-1{
+        width: 100%;
+        height: calc(50% - 5px);
+        margin-right: 10px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        float: left;
+    }
+    .img-2{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        margin-right: 10px;
+        background-color: transparent;
+        margin-right: 5px;
+        margin-top: 5px;
+        float: left;
+    }
+    .img-3{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        background-color: transparent;
+        margin-left: 5px;
+        margin-top: 5px;
+        float: left;
+    }
+}
+@media (max-width:1330px) {
+    .img-1{
+        width: 100%;
+        height: calc(50% - 5px);
+        margin-bottom: 5px;
+        background-color: transparent;
+        float: left;
+    }
+    .img-2{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        background-color: transparent;
+        margin-right: 5px;
+        margin-top: 5px;
+        float: left;
+    }
+    .img-3{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        background-color: transparent;
+        margin-left: 5px;
+        margin-top: 5px;
+        float: left;
+    }
+}
+@media (max-width:768px) {
+    .img-1{
+        width: 100%;
+        height: 33%;
+        background-color: transparent;
+        margin-bottom:0px;
+        float: left;
+    }
+    .img-2{
+        width: 100%;
+        height: 33%;
+        background-color: transparent;
+        margin-left: 0px;
+        margin-top: 0px;
+        float: left;
+    }
+    .img-3{
+        width: 100%;
+        height: 34%;
+        background-color: transparent;
+        margin-left: 0px;
+        margin-top: 0px;
+        float: left;
+    }
+}

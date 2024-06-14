@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0426-5-垂直置中</title>
+    <style>
+    body{
+            /* 將小版面置中於大版面方法 且 大版面也置中*/
+            /* 設置body大小限制 vw 為長寬之單位長度*/
+            /* padding-top:(總height-須置中物體height)/2=須扣總長 */
+            margin: 0;
+            width: 100vw;
+            height: calc(100vw - (100vw - 600px)/2);
+            background-color: antiquewhite;
+            padding-top: calc((100vw - 600px)/2);
+
+    }
+        #all{
+            /* 垂直置中先於大版面padding-top or -bottom */
+            /* padding-top:(總height-須置中物體height)/2=須扣總長 */
+            /* 水平置中為大小版面加上 margin: auto; */
+            width: calc(600px);
+            height: calc(600px - (600px - 100px)/2);
+            background-color: aqua;
+            padding-top: calc((600px - 100px)/2);
+            margin: auto;
+
+        }
+        #box-c1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box-c1"> </div>
+    </div>
+</body>
+</html>
