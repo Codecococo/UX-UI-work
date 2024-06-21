@@ -1,0 +1,62 @@
+
+body {
+    margin: 50px;
+    text-align: center;
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.347), rgba(255, 255, 255, 0.5)), /* 半透明的白色背景 */
+    url('./img/aesthetic-spring-flowers-desktop-wallpaper-4k.jpg') no-repeat center center; /* 背景圖像 */
+    background-size: cover;
+}
+.form_style {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 50px;
+    /* padding: 50px; */
+}
+.form_style-cm-kg {
+    width: 300px;
+    /* display: flex; */
+    /* justify-content: center; */
+    gap: 10px;
+    margin: 40px auto;
+    /* padding: 50px 0; */
+}
+.form_style-cm {
+    margin-bottom: 20px;
+}
+
+.form_style label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_style label span {
+    min-width: 40px;
+}
+
+.form_style .input_value {
+    width: 100%;
+}
+
+.cu_btn {
+    width: 20%;
+}
+img {
+    max-width: 300px;
+    object-fit: contain; /* Adjust the size as needed */
+    opacity: 1; /* Set the transparency */
+}
+table {
+    text-align: center;
+    border: 0.05rem solid black;
+    background-color: white;
+    
+}
+
+/* 顏色的優先度不夠 ，所以加上!imortant; */
+.displaycolor th,.displaycolor td{
+    background: linear-gradient(135deg, hsl(78, 89%, 65%) 0%, hsl(73, 85%, 82%) 50%, hsl(122, 77%, 71%) 100%);
+    /* background-color: aqua!important; */
+}
